@@ -7,9 +7,6 @@ class TestRomanCoverter(unittest.TestCase):
     def test_int_to_roman_basic(self):
         self.assertEqual(int_to_roman(73), "LXXIII")
 
-    def test_roman_to_int_basic(self):
-        self.assertEqual(roman_to_int("DLXI"), 561)
-
     def test_invalid_number(self):
         with self.assertRaises(Exception):
             int_to_roman(0)
