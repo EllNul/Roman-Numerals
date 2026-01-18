@@ -1,5 +1,8 @@
 import roman
 
+class RomanConversionError(Exception):
+    pass
+
 def int_to_roman(number):
     return roman.toRoman(number)
 
