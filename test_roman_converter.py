@@ -10,5 +10,13 @@ class TestRomanConverter(unittest.TestCase):
     def test_roman_to_int(self):
         self.assertEqual(roman_to_int("MMMDCXXV"), 3625)
 
+    def test_invalid_intergers(self):
+        with self.assertRaises(Exception):
+            int_to_roman(4000)
+
+    def test_invalid_roman(self):
+        with self.assertRaises(Exception):
+            roman_to_int(ABC)
+
 if __name__ == "__main__":
     unittest.main()
