@@ -10,5 +10,9 @@ class TestRomanCoverter(unittest.TestCase):
     def test_roman_to_num_basic(self):
         self.assertEqual(roman_to_num("DLXI"), 561)
 
+    def test_invalid_number(self):
+        with self.assertRaises(Exception):
+            num_to_roman(0)
+
 if __name__ == "__Main__":
     unittest.main()
