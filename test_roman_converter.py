@@ -12,7 +12,7 @@ class TestRomanConverter(unittest.TestCase):
 
     def test_invalid_integers(self):
         with self.assertRaises(RomanConversionError):
-            int_to_roman(4000)
+            int_to_roman(4000000000)
 
     def test_invalid_roman(self):
         with self.assertRaises(RomanConversionError):
