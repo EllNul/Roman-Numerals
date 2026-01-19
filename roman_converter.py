@@ -1,7 +1,6 @@
 import roman
 
-class RomanConversionError(Exception):
-    pass
+from roman import RomanError as RomanConversionError
 
 def int_to_roman(number):
     return roman.toRoman(number)
